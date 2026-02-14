@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import meImage from '../assets/me.png';
 ---
 
 <Layout title="Deczersolution | Automation & Design">
@@ -19,8 +20,8 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 			
 			<div class="w-48 h-48 md:w-64 md:h-64 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
-				<span class="text-slate-500 text-sm"><img src="/src/assets/me.png" alt="Profile Picture" class="w-full h-full object-cover"></span>
-				</div>
+				<span class="text-slate-500 text-sm"><img src={meImage.src} alt="Profile Picture" class="w-full h-full object-cover"/></span>
+			</div>
 		</section>
 
 		<section class="mb-32 p-8 rounded-3xl bg-gradient-to-br from-slate-900 to-black border border-slate-800 relative overflow-hidden group">
